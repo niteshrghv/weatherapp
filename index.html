@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherAPI</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>The WEATHER APP</h1>
+        <div>
+            <input type="text" name="" id="input" placeholder="Enter city name"/>
+            <button id="search"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+
+    <div class="main">        
+        <div class="weather">
+            <h2 id="city">Delhi, IN</h2>
+            <div class="temp-box">
+                <img src="./grey.png" alt="" id="img">
+                <p id="temperature">26 °C</p>
+            </div>
+            <span id="clouds">Broken Clouds</span>
+            <div class="hum-wind">
+                <div>
+                    <p class="hum">Humidity</p>
+                    <p id="humVal">100%</p>
+                </div>
+                <div>
+                    <p class="wind">Wind</p>
+                    <p id="windVal">3.9 km/h</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider1"></div>
+
+        <div class="forecastH">
+            <p class="cast-header">Upcoming forecast</p>
+            <div class="templist">
+
+                <div class="next">
+                    <div>
+                        <p class="time">08:30</p>
+                        <p class="minmaxTempHr">29 °C</p>
+                    </div>
+                    <p class="desc hrDesc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">08:30</p>
+                        <p class="minmaxTempHr">29 °C</p>
+                    </div>
+                    <p class="desc hrDesc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">08:30</p>
+                        <p class="minmaxTempHr">29 °C</p>
+                    </div>
+                    <p class="desc hrDesc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">08:30</p>
+                        <p  class="minmaxTempHr">29 °C</p>
+                    </div>
+                    <p class="desc hrDesc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">08:30</p>
+                        <p class="minmaxTempHr">29 °C</p>
+                    </div>
+                    <p class="desc hrDesc">Light Rain</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="forecastD">
+
+        <div class="divider2"></div>
+
+        <p class="cast-header">Next 4 days forecast</p>
+
+        <div class="weekF">
+
+            <div class="dayF">
+                <p class="date">Sun March 20 2023</p>
+                <p class="minmaxTempDay">31 °C / 31 °C</p>
+                <p class="desc dayDesc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun March 20 2023</p>
+                <p class="minmaxTempDay">31 °C / 31 °C</p>
+                <p class="desc dayDesc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun March 20 2023</p>
+                <p class="minmaxTempDay">31 °C / 31 °C</p>
+                <p class="desc dayDesc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun March 20 2023</p>
+                <p class="minmaxTempDay">31 °C / 31 °C</p>
+                <p class="desc dayDesc">Overcast Clouds</p>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

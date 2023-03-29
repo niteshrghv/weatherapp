@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1rem 5rem;
+    background: linear-gradient(45deg,rgba(124, 62, 196, 0.15),rgba(49, 5, 99, 0.717)),
+        url('./background.jpeg');   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1{
+    color: rgb(255, 156, 8);  
+}
+#input{
+    font-size: 18px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 24px;
+    background: aliceblue;
+}
+#search{
+    padding: 5px 20px;
+    color: aliceblue;
+    outline: none;
+    border: none;
+    background: rgb(255, 156, 8);
+    font-size: 17px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.main{
+    display: grid;
+    grid-column-gap: 25px;
+    grid-template-columns: 1fr 5px 1fr;
+    align-items: center;
+    margin: 30px 50px;
+    color: aliceblue;
+}
+.weather{
+    text-align: center; 
+}
+#city{
+    font-size: 30px;
+}
+.weather img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(240, 248, 255, 0.408);
+}
+#temperature{
+    font-size: 50px;
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.temp-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+#clouds{
+    font-size: 24px;
+    color: rgb(196, 255, 77);
+    text-transform: capitalize;
+}
+.hum-wind{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 100px;
+}
+.hum-wind p{
+    margin: 3px 0;
+}
+.hum,.wind,.time,.date{
+    color: rgb(254, 189, 132);
+}
+.divider1,.divider2{
+    background: rgba(254, 189, 132, 0.539);
+    border-radius: 24px;
+}
+.divider1{
+    margin-top: 50px;
+    height: 250px;
+}
+.cast-header{
+    background: rgba(254, 189, 132, 0.539);
+    width: max-content;
+    padding: 5px 15px;
+    border-radius: 24px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.next{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 5px;
+}
+.next p{
+    margin: 3px 0;
+}
+.desc{
+    color: rgb(196, 255, 77);
+    text-transform: capitalize;
+}
+.forecastD{
+    margin: 20px 50px;
+    color: aliceblue;
+}
+.divider2{
+    height: 5px;
+    width: 40%;
+    margin: 5px auto;
+}
+.weekF{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
